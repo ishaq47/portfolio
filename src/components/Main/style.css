@@ -1,0 +1,22 @@
+/* .right::before {
+  content: "";
+  position: absolute;
+  left: 9em;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  background: #111 !important;
+    width: 40%;
+    
+} */
+
+
+.right {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+}
+
+/* Remove clip-path for screens smaller than the specified breakpoint */
+@media (max-width: 767px) {
+  .right {
+    clip-path: none;
+  }
+}
